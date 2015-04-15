@@ -1,0 +1,274 @@
+* { Box-sizing: Border-box } 
+
+body {
+	font-size: 1em;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.payment-icon {
+	display: inline-block;
+	width: 1.6em;
+	height: 1em;
+
+	overflow: hidden;
+	text-indent: -1000px;
+
+	font-size: 2em;
+	line-height: 1em;
+
+	margin: 0.2em 0.5em;
+
+	background-size: contain;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	background-clip: border-box;
+
+}
+
+.payment-icon-style-card {
+	position: relative;
+
+	color: beige;
+	color: whitesmoke;
+
+	padding: 0.15em;
+	
+	border: 0.02em solid currentColor;
+	background-color: currentColor;
+	
+	border-radius: 0.1em;
+	
+	/*box-shadow: 0 0 0.5em 0.1em currentColor inset,
+				0.02em 0.02em 0.1em 0em rgba(0,0,0,0.5);*/
+
+	box-shadow: 0.02em 0.02em 0.1em 0em rgba(0,0,0,0.5);
+		
+}
+
+.payment-icon-style-card:before {
+  /*content: "\00a0";*/
+}
+
+.payment-icon-style-card.payment-icon-style-hilight:before,
+.payment-icon-style-card.payment-icon-style-hilight:after {
+  display: block;
+  position:absolute;
+  content: "";
+  background-color: transparent;
+  
+  width: 0; 
+  height: 0; 
+  top: -0.02em;
+  left: -0.02em;
+}
+
+.payment-icon-style-card.payment-icon-style-hilight:before {
+  border-bottom: 1em solid transparent; 
+  border-left: 1.6em solid rgba(255,255,255,0.2); 
+}
+.payment-icon-style-card.payment-icon-style-hilight:after {
+  border-top: 1em solid transparent; 
+  border-right: 1.6em solid rgba(0,0,0,0.025); 
+}
+
+
+
+.payment-icon-style-card.payment-icon-style-ios {
+	border-radius: 0.2em;
+}
+
+.payment-icon-style-card.payment-icon-style-ios:after {
+  display: block;
+  position:absolute;
+  content: "";
+  background-color: rgba(255,255,255,0.5);
+  
+  width: 100%; 
+  height: 150%; 
+  top: -95%;
+  left: 0;
+  border-radius: 10em;
+}
+
+
+.payment-icon-style-card.payment-icon-square {
+  width: 1em;
+}
+
+
+.payment-icon-style-card.payment-icon-circle {
+  width: 1em;
+  border-radius: 1em;
+}
+.payment-icon-style-card.payment-icon-circle:before {
+  border-left-width:1em; 
+}
+.payment-icon-style-card.payment-icon-circle:after {
+  border-right-width:1em; 
+}
+
+
+.payment-icon.payment-icon-americanexpress {
+  background-image: url(icons/acceptance/americanexpress.svg);
+}
+.payment-icon.payment-icon-applepay {
+  background-image: url(icons/acceptance/applepay.svg);
+}
+.payment-icon.payment-icon-cirrus {
+  background-image: url(icons/acceptance/cirrus.svg);
+}
+.payment-icon.payment-icon-dankort {
+  background-image: url(icons/acceptance/dankort.svg);
+}
+.payment-icon.payment-icon-dinersclub {
+  background-image: url(icons/acceptance/dinersclub.svg);
+}
+.payment-icon.payment-icon-discover {
+  background-image: url(icons/acceptance/discover.svg);
+}
+.payment-icon.payment-icon-forbrugsforeningen {
+  background-image: url(icons/acceptance/forbrugsforeningen.svg);
+}
+.payment-icon.payment-icon-giropay {
+  background-image: url(icons/acceptance/giropay.svg);
+}
+.payment-icon.payment-icon-googlewallet {
+  background-image: url(icons/acceptance/googlewallet.svg);
+}
+.payment-icon.payment-icon-jcb {
+  background-image: url(icons/acceptance/jcb.svg);
+}
+.payment-icon.payment-icon-maestro {
+  background-image: url(icons/acceptance/maestro.svg);
+}
+.payment-icon.payment-icon-mastercard {
+  background-image: url(icons/acceptance/mastercard.svg);
+}
+.payment-icon.payment-icon-mobilepay {
+  background-image: url(icons/acceptance/mobilepay.svg);
+}
+.payment-icon.payment-icon-mondex {
+  background-image: url(icons/acceptance/mondex.svg);
+}
+.payment-icon.payment-icon-paii {
+  background-image: url(icons/acceptance/paii.svg);
+}
+.payment-icon.payment-icon-paypal {
+  background-image: url(icons/acceptance/paypal.svg);
+}
+.payment-icon.payment-icon-plus {
+  background-image: url(icons/acceptance/plus.svg);
+}
+.payment-icon.payment-icon-swipp {
+  background-image: url(icons/acceptance/swipp.svg);
+}
+.payment-icon.payment-icon-unionpay {
+  background-image: url(icons/acceptance/unionpay.svg);
+}
+.payment-icon.payment-icon-visa {
+  background-image: url(icons/acceptance/visa.svg);
+}
+.payment-icon.payment-icon-westernunion {
+  background-image: url(icons/acceptance/westernunion.svg);
+}
+
+
+.payment-icon-provider.payment-icon-teller dfn:after{
+  background-image: url(icons/providers/teller.svg);
+}
+.payment-icon-provider.payment-icon-paypal dfn:after{
+  background-image: url(icons/providers/paypal.svg);
+}
+.payment-icon-provider.payment-icon-skrill dfn:after{
+  background-image: url(icons/providers/skrill.svg);
+}
+.payment-icon-provider.payment-icon-worldpay dfn:after{
+  background-image: url(icons/providers/worldpay.svg);
+}
+
+
+.payment-icon-options {
+	color: gray;
+	border: 0.15em solid currentColor;
+	border-top: none;
+	border-radius: 1em;
+	overflow: visible;
+	display: inline-block;
+    padding: 0.5em 0;
+	position: relative;
+}
+.payment-icon-options dd{
+	float: left;
+	margin: 0;
+}
+
+
+.payment-icon-provider {
+	display: block;
+	overflow: hidden;
+	margin-top: -1.5em;
+	line-height: 1em;
+	font-size: 0.8em;
+}
+.payment-icon-provider:before {
+	content: "";
+	display: inline-block;
+	border-top: 0.15em solid currentColor;
+	border-top-left-radius: 1em;
+	height: 1em;
+	width: 1em;
+	float: left;
+	margin-top: 0.9em
+}
+.payment-icon-provider:after {
+	content: "";
+	display: block;
+	border-top: 0.15em solid currentColor;
+	border-top-right-radius: 1em;
+	height: 1em;
+	margin-left: 0.5em;
+	overflow: hidden;
+	margin-top: 0.9em;
+	min-width: 2em;
+}
+.payment-icon-provider dfn {
+	display: inline-block;
+	overflow: hidden;
+	height: 2.5em;
+	float: left;
+	margin-top: -0.5em;
+	text-indent: -500em;
+}
+.payment-icon-provider dfn:before {
+	content: "Secure Payments by";
+	display: block;
+	float: left;
+	vertical-align: middle;
+	padding: 0.5em;
+	text-indent: 0;
+	line-height: 2em;
+}
+.payment-icon-provider dfn:after {
+	content: "";
+	display: block;
+	float: left;
+	overflow: hidden;
+	width: 8em;
+	height: 2em;
+	background-size: contain;
+	background-position: 0 50%;
+	background-repeat: no-repeat;
+	background-origin: content-box;
+	padding: 0.5em;
+	text-indent: -500em;
+	vertical-align: middle;
+}
+
+
+.payment-icon-gray {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale");
+}
