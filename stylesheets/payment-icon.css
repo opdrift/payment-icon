@@ -1,9 +1,31 @@
-* { Box-sizing: Border-box } 
+
+@media screen and (min-width: 64em) {
+  .example {
+    max-width: 64rem;
+    padding: 2rem 6rem;
+    margin: 0 auto;
+    font-size: 1.1rem; } }
+
+@media screen and (min-width: 42em) and (max-width: 64em) {
+  .example {
+    padding: 2rem 4rem;
+    font-size: 1.1rem; } }
+
+@media screen and (max-width: 42em) {
+  .example {
+    padding: 2rem 1rem;
+    font-size: 1rem; } }
+	
+	
 
 body {
-	font-size: 1em;
 	font-family:Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	line-height: 1.3em;
 }
+
+.payment-icon,
+.payment-icon * { Box-sizing: Border-box } 
 
 .payment-icon {
 	display: inline-block;
@@ -204,12 +226,12 @@ body {
 }
 
 
-.payment-icon-provider {
+.payment-icon-provider {  
 	display: block;
 	overflow: hidden;
 	margin-top: -1.5em;
-	line-height: 1em;
 	font-size: 0.8em;
+	line-height: 1em;
 }
 .payment-icon-provider:before {
 	content: "";
