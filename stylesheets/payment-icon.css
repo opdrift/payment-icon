@@ -19,9 +19,9 @@
 	
 
 body {
-	font-family:Arial, Helvetica, sans-serif;
+	/*font-family:Arial, Helvetica, sans-serif;
 	font-size: 14px;
-	line-height: 1.3em;
+	line-height: 1.3em;*/
 }
 
 .payment-icon,
@@ -219,7 +219,10 @@ body {
 	display: inline-block;
     padding: 0.5em 0;
 	position: relative;
+	width: 100%;
+	min-width: 20em;
 }
+
 .payment-icon-options dd{
 	float: left;
 	margin: 0;
@@ -252,7 +255,7 @@ body {
 	margin-left: 0.5em;
 	overflow: hidden;
 	margin-top: 0.9em;
-	min-width: 2em;
+	min-width: 1em;
 }
 .payment-icon-provider dfn {
 	display: inline-block;
